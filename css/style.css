@@ -532,61 +532,67 @@ iframe[src^="https://www.youtube.com"] {
 @media only screen and (max-width: 768px) {
 
   /*Encabezado*/
-
-  .header-logo {
-    margin:auto;
-  }
-  .header-menubar {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    margin-top: 0.5rem;
-  }
   
-  .header-menubar ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+    header {
+      width: 96%;
+    }
   
-  .header-menubar li {
-    margin: 0.2rem;
-    text-align: center;
-  }
+    .header-logo {
+      margin-left: -3rem;
+      transform: scale(0.6);
+    }
   
-  .header-menubar li a {
-    display: block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 5px;
-    color: #f5f5f5;
-    background-color: #2d4059;
-    transition: all 0.3s;
-    font-size: 0.6rem;
-  }
+    .header-titulo {
+      display: inline-block;
+      flex-direction: column;
+      align-items: left;
+      justify-content: left;
+      text-align: left;
+      margin-left: -11.5rem;
+      width: auto;
+    }
   
-  .header-menubar li a:hover {
-    background-color: #1d2c3c;
-  }
+    .header-titulo h1 {
+      font-size: 0.9rem;
+      margin-top: 0;
+      
+    }
   
-  .header-titulo {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 30%;
-  }
+    .header-menubar {
+      display: inline-block;
+      justify-content: center;
+      margin-top: 2.5rem;
+      margin-left: -40rem;
+      width: 10px;
+    }
   
-
-  .header-titulo h1 {
-    font-size: 1.1rem;
-    margin: auto;
-    align-items: left;
-
-  }
-
+    .header-menubar ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .header-menubar li {
+      margin: 0.2rem;
+      text-align: center;
+    }
+  
+    .header-menubar li a {
+      display: block;
+      padding: 0.2rem;
+      border-radius: 5px;
+      color: #f5f5f5;
+      background-color: #2d4059;
+      transition: all 0.3s;
+      font-size: 0.6rem;
+    }
+  
+    .header-menubar li a:hover {
+      background-color: #1d2c3c;
+    }
   /*Resto del body*/
 
   body {
@@ -609,6 +615,13 @@ iframe[src^="https://www.youtube.com"] {
     max-width: 100%;
     height: auto;
   }
+
+  .tituloGrande {
+    font-size: 1.3rem;
+  }
+  .parrafoGrande {
+    font-size: 1rem;
+  }
   
   /* ESTILO PARA SUBPÁGINAS /
 / ESTILO Consultas.html */
@@ -618,6 +631,10 @@ iframe[src^="https://www.youtube.com"] {
   margin-left: 0%;
   margin-top: 2rem;
   }
+
+  .sub_contenido_principal img {
+    width: 100%;   
+    }
   
   .sub_contenido_secundario {
   width: 100%;
@@ -639,7 +656,7 @@ iframe[src^="https://www.youtube.com"] {
   }
   
   .parrafoSubpaginas {
-  font-size: 1.1rem;
+  font-size: 1rem;
   }
   
   /* Formulario*/
@@ -663,14 +680,9 @@ iframe[src^="https://www.youtube.com"] {
   /* ESTILO PARA SUBPÁGINAS (equipos_viejos.html) */
   
   .parrafoSubpaginas1 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   }
   
-  .img_equiposviejos1 {
-  transform: scale(0.8);
-  border: 5px solid #ff8c00;
-  }
-
   /* ESTILO PARA SUBPÁGINAS (instalar_linux.html) */
   
   .sub_contenido_secundario2 {
@@ -688,7 +700,17 @@ iframe[src^="https://www.youtube.com"] {
   line-height: 1.6;
   }
 
+  .video_responsivo {
+    max-width: 100%;
+    height: auto;
+  }
+
   /*Footer*/
+
+  footer {
+    width: calc(100% - 10px);
+  }
+  
 
   .footer-container {
       width: 100%;
@@ -697,201 +719,79 @@ iframe[src^="https://www.youtube.com"] {
       justify-content: center;
     }
   
-    .footer-left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .footer-right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .flaticon-container {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .footer-left .slogan,
-    .footer-left .copyrigth {
-     margin-left: 0;
-     margin-right: 1rem;
-     margin-bottom: 1rem;
-    }
-    
-    .flaticon {
-      width: 20px;
-      height: 20px;
-      display: block;
-      margin: auto;
-      margin-top: auto;
-    }
-    
-    .footer-bottom {
-      margin-bottom: -0.9rem;
-    }
-
-    .twitter, .mail, .slogan, .copyrigth {
-      margin: 0.2rem;
-    }
-  
-   .slogan, .copyrigth {
-    font-size: 0.9rem;
-  }
-
-  .mail, .twitter {
-    font-size: 0.7;
-  }
-
-}
-
-/* Responsividad 2 orientada a celulares */
-
-/* Elementos para tratar de que sea responsivo */
-
-@media only screen and (max-width: 768px) {
-
-  /*Encabezado*/
-
-  .header-logo {
-    margin:auto;
-  }
-  .header-menubar {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    margin-top: 0.5rem;
-  }
-  
-  .header-menubar ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header-menubar li {
-    margin: 0.2rem;
-    text-align: center;
-  }
-  
-  .header-menubar li a {
-    display: block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 5px;
-    color: #f5f5f5;
-    background-color: #2d4059;
-    transition: all 0.3s;
-    font-size: 0.6rem;
-  }
-  
-  .header-menubar li a:hover {
-    background-color: #1d2c3c;
-  }
-  
-  .header-titulo {
+  .footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .footer-container {
+    display: flex;
     text-align: center;
-    width: 30%;
-  }
-  
-
-  .header-titulo h1 {
-    font-size: 1.1rem;
-    margin: auto;
-    align-items: left;
-
+    align-items: center;
+    justify-content: center;
   }
 
-  /*Resto del body*/
+  .footer-left {
+    margin: 1rem 0;
+    text-align: center;
+  }
 
-  body {
-    font-size: 16px;
+  .footer-right {
+    margin: 1rem 0;
+    text-align: center;
   }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* ESTILO PARA SUBPÁGINAS /
-/ ESTILO Consultas.html */
 
-  .sub_contenido_principal {
-    width: 100%;
-    margin-left: 0%;
-    margin-top: 2rem;
+  .flaticon-container {
+    margin: 1rem 0;
   }
-  
-  .sub_contenido_secundario {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 2rem;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1rem;
-    background-color: f9f9f9;
-    position: relative;
+
+  .flaticon {
+    width: 25px;
+    height: 25px;
   }
-  
-  .sub_contenido_secundario img {
-    position: static;
-    border: 5px solid #ff8c00;
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+
+  .footer-left .slogan,
+  .footer-left .copyrigth {
+    margin: 0.5rem 0;
   }
-  
-  .parrafoSubpaginas {
-    font-size: 1.1rem;
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  /* Formulario*/
-  
-  .form-control {
-    font-size: 1rem;
+
+  .footer-right a {
+    display: inline-block;
+    margin: 0 auto;
   }
-  
-  .form-label {
-    font-size: 1rem;
+
+  .footer-right .mail {
+    display: block;
+    margin: 0 auto;
   }
-  
-  textarea.form-control {
-    height: calc(4*1.5rem +2 * 1rem +2 * 0.375rem + 2px);
+
+  .footer-bottom {
+    margin-bottom: 0;
+    font-size: 10px;
+
   }
-  
-  .btn-primary {
-    font-size: 1rem;
+
+  .slogan {
+    font-size: 12px;
   }
-  
-  /* ESTILO PARA SUBPÁRRAFOS */
-  p.sub {
-    font-size: 0.9rem;
-    color: #555;
-    margin-left: 1em;
+
+  .copyrigth {
+    font-size: 12;
+  }
+
+  .twitter {
+    font-size: 10px;
+  }
+
+  .mail {
+    font-size: 11px;
   }
 }
-  
